@@ -12,25 +12,6 @@ $(document).ready(function(){
 
     });
 
-    $('.center-block-second a img').mouseover(function () {
-
-        if ($(this).attr('src') !== 'img/star-empty.png') {
-            $(this).attr('src', 'img/star-empty.png');
-        } else
-        {
-            $(this).attr('src', 'img/star-full.png');
-        }
-    });
-
-    $('.center-block-second a img').mouseleave(function () {
-        if ($(this).attr('src') !== 'img/star-empty.png') {
-            $(this).attr('src', 'img/star-empty.png');
-        } else
-        {
-            $(this).attr('src', 'img/star-full.png');
-        }
-    });
-
     $('.button_black').mouseover(function () {
         $(this).css({"border":"2px dashed white", "font-size":"27px"})
     });
@@ -52,5 +33,11 @@ $(document).ready(function(){
 
     $('.button_white').mouseleave(function () {
         $(this).css({"border":"1px dashed #dfc691", "font-size":"20px"})
+    });
+
+    $('.autoplay').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true
     });
 });
