@@ -33,7 +33,7 @@ body {
 .container {
     position: relative;
 }
-.container:first-child{
+body .container:first-child{
     background-image: url("../img/bg1.png");
     height: 100%;   /*без хейт бекграунд стає коротшим*/
 }
@@ -147,6 +147,10 @@ header,.center-block,.container_padding div,.widget-absolute, .box-with-center-l
     text-decoration: none;
 }
 
+.button_black:hover{
+    border:2px dashed white;
+    font-size:27px;
+}
 /*Блок2*/
 .container-top-border {
     background-color: white;
@@ -396,6 +400,10 @@ h2 + p + p {
     text-decoration: none;
     color: #a47d5e;
 }
+.button_transparent:hover{
+    border:1px solid black;
+    font-size:27px;
+}
 
 .center_bg4 .column_right div:first-child {
     padding: 0 20% 0 10%;
@@ -501,6 +509,49 @@ body:last-child {
     top: 73%;
     left: 30%;
 }
+.button_white:hover{
+    border:2px dashed #dfc691;
+    font-size:27px;
+}
+/*changes for slick carousel*/
+.autoplay{
+    margin-top: 24%;
+}
+
+.slick-prev {
+    background-image: url('../img/bg3-arrow-left-black.png');
+    left:-45px;
+}
+.slick-prev:hover{
+    background-image: url("../img/bg3-arrow-left-brown.png");
+    background-repeat: no-repeat;
+}
+.slick-prev:before {
+    content: '';
+}
+
+.slick-next{
+    background-image: url('../img/bg3-arrow-right-black.png');
+    right: -35px;
+}
+.slick-next:hover{
+    background-image: url("../img/bg3-arrow-right-brown.png");
+    background-repeat: no-repeat;
+}
+.slick-prev, .slick-next{
+    background-repeat:no-repeat;
+    width: 35px;
+    height: 35px;
+}
+.slick-next:before {
+    content: '';
+}
+/*.slick-next:before{
+    content:url('../img/bg3-arrow-right-black.png');
+}
+.slick-prev:before{
+    content:url('../img/bg3-arrow-left-black.png');
+}*/
 
 footer .box-with-center-logo div {
     width: auto;
